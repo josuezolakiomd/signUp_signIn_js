@@ -70,7 +70,7 @@ const signInAccount = () => {
     if(SignUpForm.hasAttribute('class')) {
       SignUpForm.setAttribute('class', 'hide');
       SignInForm.setAttribute('class', 'show');
-    }
+    } 
 
     loginAccountBtn.addEventListener('click', () => {
       const signinInputText = document.querySelector('#signinInputText').value;

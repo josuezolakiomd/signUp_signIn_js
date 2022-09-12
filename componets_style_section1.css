@@ -55,6 +55,10 @@ input:last-child {
   margin-bottom: 10px;
 }
 
+.contentSection {
+  display: none;
+}
+
 .hide {
   display: none;
 }
