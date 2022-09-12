@@ -1,0 +1,63 @@
+.Left_Container, .Right_Container {
+  color: #fafafa;
+  height: 100vh;
+  width: 50%;
+}
+
+.Left_Container {
+  background-image: url('img1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Right_Container {
+  background-color: rgb(48, 48, 47);
+}
+
+.Right_Container h1 {
+  text-align: center;
+  width: 500px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.Right_Container p {
+  text-align: center;
+  width: 500px;
+}
+
+.SignUpForm {
+  display: block;
+}
+.SignInForm {
+  display: none;
+}
+
+.SignUpForm, #SignInForm {
+  width: 400px;
+  padding: 20px 30px;
+  background-color: #222;
+  border-radius: 0.25rem;
+  margin-top: 30px;
+}
+
+.SignUpForm h4, 
+#SignInForm h4 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  color:#d8d8d8;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px 20px;
+}
+input:last-child {
+  margin-bottom: 10px;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
