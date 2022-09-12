@@ -1,6 +1,7 @@
 'use strict'
 
 const loginSection = document.querySelector('#loginSection');
+const contentSection = document.querySelector('#contentSection');
 
 const createAccountBtn = document.querySelector('#createBtn');
 const loginAccountBtn = document.querySelector('#loginBtn');
@@ -76,14 +77,17 @@ const signInAccount = () => {
       const signinInputPass = document.querySelector('#signinInputPass').value;
 
       if(username === signinInputText && password === signinInputPass) {
-        sessionLogged();
+        sessionLogged(); 
       } 
     })
 
     if(sessionStorage.getItem('isLogged') === 'true') {
       if(loginSection.hasAttribute('class')) {
         loginSection.setAttribute('class', 'hide');
+        contentSection.setAttribute('class', 'show');
       }
+    } else {
+      contentSection.setAttribute('class', 'hide');
     }
   } 
 }
